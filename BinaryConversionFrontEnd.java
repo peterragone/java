@@ -45,12 +45,23 @@ return itsNotANumber;
 public static boolean isАDecimal(String next NumIn) {
 boolean itsАDecimal = false; if(next NumIn.contains(".")) {
 itsАDecimal = true;
-return it sАDecimal;
+return itsАDecimal;
+    
     public static String binConvertInt(long num) {
         //This is your code for binary byte, short, int and long conversion 
         String binString = ""; 
         //Your code here.... 
-        
+        long remainderNum = num;
+        while remainderNum > 0 {
+            // Build the string of bits left to right using mod until nothing left to divide.
+            if (remainderNum % 2 == 0) {
+                binString += 0;
+            }
+            else {
+                binString += 1;
+            }
+            remainderNum = remainderNum / 2;  // This will be zero if last is 0 or 1 because (long 1) / 2 truncates the decimal part. 
+        }    
         return binString;
     }
 }
