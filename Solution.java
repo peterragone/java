@@ -1,4 +1,7 @@
 import java.io.*;
+
+//Write your code here
+
 class Arithmetic {
 
     public int add (int x, int y) {
@@ -9,8 +12,6 @@ class Arithmetic {
 
 class Adder extends Arithmetic {
 }
-
-//Write your code here
 
 public class Solution{
     public static void main(String[] args) {
